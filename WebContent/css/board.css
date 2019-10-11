@@ -1,0 +1,51 @@
+
+@charset "UTF-8";
+
+#contents {
+    height: 870px;
+}
+#content1  {
+    height: 800px;
+    background-color: #FFFFFF; 
+    text-align: left;
+    color: black !important;
+}
+#select {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 5px;
+}
+
+#search {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pagination{
+    font-size: 1.5rem;
+    color: black !important;
+}
+
+#content2 {
+    height: 20px;
+    
+}
+#content3 {
+    height: 290px;
+   
+}
+/* 컨테이너 */
+.container {
+    width: 1500px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+#title{
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}

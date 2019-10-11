@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+
+#banner {
+     height: 50px;
+    line-height: 200px;
+}
+#contents {
+    height: auto;
+}
+
+/* 레이아웃 */
+#header-nav {
+    height: 50px;
+    line-height: 50px;
+    background: #e4e4e4;
+}
+#content-top {
+    height: 50px;
+    line-height: 50px;
+    background-color: #f4f4f4;
+}
+#content-session{
+    height:auto;
+    
+}
+#content_footer{
+    height:auto;
+    line-height: 35px;
+    text-align: left;
+    padding: 10px;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+/* 상단 타이틀 및 카테고리 */
+
+/* 상단 로그인 및 마이페이지 */
+
+/* 배너 이미지 */
+
+/* 하단 정보 */
+
+/*컨텐츠 정보*/
+.container .top_info{
+    margin-bottom: 15px;
+    border: 1px solid #222121;
+
+}
+.main-session{
+    padding-bottom: 10px;
+}
+.container .main-session .order{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*컨텐츠 하단*/
+.container .total_product{
+    font-size: 13px;
+    margin: 0;
+    padding: 0; 
+    border-bottom: 1px solid black;
+    
+}
+.payment_container{
+    border-top:1px solid #E3E6E4;
+}
+.payment_container>li{
+    margin: 5px;
+    padding: 5px;
+    font-size: 17px;
+}
+.container .total_product .info{
+    padding: 5px;
+    margin:5px;
+}
+/*테이블*/
+table, tr, td{
+    border: 1px solid #E3E6E4;
+    border-left-color: #fff;
+    border-right-color: #fff;
+
+}
+.cart_table{
+    border-top: 1px solid #000; 
+    border-spacing: 0; 
+    border-collapse: collapse; 
+    border-bottom: 1px solid #000;
+    text-align: center; 
+    margin-bottom: 60px;
+}
+.cart_table caption{
+    caption-side: bottom;display: none;
+}
+.txt_origin_price{
+    text-decoration:line-through;
+    text-decoration-color: red;
+    font-weight: 1000;
+    font-size: 12px;
+}
+.container .main-session .cart_table .date{
+    font-size: 12px;
+    color: #2E2E2E;
+}
+/*버튼*/
+.a_btn{
+    width: 115px;
+    height: 25px;
+    line-height: 25px;
+    background: #231F20;
+    padding: 10px 20px;
+    
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.delete-btn-area{
+    text-align: center;
+    padding: 20px;
+}
+button{
+    background: #231F20;
+    border-style: none;
+    margin-right: 3px;
+}
+.payment{
+    margin:5px;
+    padding:3px;
+}

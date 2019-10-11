@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+#banner{
+    height: 50px;
+    
+}
+#contents {
+    height: auto;
+}
+
+/* 레이아웃 */
+#header-nav {
+    height: 50px;
+    line-height: 50px;
+    background: #e4e4e4;
+}
+#content-top {
+    height: 50px;
+    line-height: 50px;
+}
+#content-session{
+    height:auto;
+}
+#content_footer{
+    height:300px;
+    line-height: 35px;
+     
+}
+#content_footer > .container{
+    border:1px solid #E3E6E4;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    margin-top: 20px;
+}
+/* 컨테이너 */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+/* 하단 정보 */
+.container .info{
+    height: 140px;
+    text-align: center;
+}
+.container .info li dl .txt{
+    font-size: 12px;
+    color: #a4a4a4;
+}
+/*컨텐츠 정보*/
+.container .top_info{
+    margin-bottom: 15px;
+    border: 1px solid #222121;
+
+}
+.main-session{
+    padding-bottom: 10px;
+}
+/*컨텐츠 하단*/
+.container .total_product{
+    font-size: 13px;
+    margin: 0;
+    padding: 0; 
+    border-bottom: 1px solid #E3E6E4;    
+}
+.container .total_product .info{
+    padding: 5px;
+    margin:5px;
+}
+/*테이블*/
+.container .cart_table{
+    border-spacing: 0; 
+    border-collapse: collapse;
+    text-align: center;
+    padding-bottom: 30px;
+}
+table, tr, td{
+    border: 1px solid #E3E6E4;
+    border-left-color: #fff;
+    border-right-color: #fff;
+
+}
+.cart_table caption{
+    caption-side: bottom;
+    display: none;
+}
+.txt_origin_price{
+    text-decoration:line-through;
+    text-decoration-color: #BB4430;
+    text-decoration-style: solid;
+    font-weight: 1000;
+    font-size:　12px;
+}
+.container .main-session .cart_table .date{
+    font-size: 12px;
+    color: #2E2E2E;
+}
+.container .main-session .cart_table .amount{
+    border-radius: 2px;
+    width: 20px;
+    border-style: none;
+    background-color: #231F20;
+    color: white;
+}
+.container .main-session .cart_table .delete{
+    padding: 3px 10px;
+    border-radius: 3px;
+    background-color: #231F20;
+    color: white;
+}
+/*버튼*/
+.a_btn{
+    display: inline-block;
+    width: 115px;
+    height: 25px;
+    line-height: 25px;
+    background: #231F20;
+    padding: 10px;
+    
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.container .delete-btn-area{
+   
+}
+button{
+    background: #E3E6E4;
+    margin: 2px;
+}

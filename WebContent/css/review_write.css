@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+#contents {
+    height: 650px;
+}
+
+/* 레이아웃 */
+
+#content-top {
+    height: 0px;
+    background-color: #f4f4f4;
+}
+#content-session{
+    height: 650px;  
+}
+#content_footer{
+    height:0px;
+    background-color: #f4f4f4;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+    color: black !important;
+}
+/* 드론 사진 영역 */
+.section1 {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+/* 입력 양식 영역 */
+.section2 {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -400px;
+    margin: px;
+}
+/* 입력 칸 크기 및 위치 고정 */
+.writer {
+    width: 400px;
+    margin: 5px;
+}
+/* 별표 위치 고정 */
+#starRev {
+    position: absolute;
+    width: 800px;
+    height: 0px;
+    margin: -25px;
+    margin-top: -240px;
+}
+/* 내용입력 칸 위치 고정 */
+.content {
+    margin-left: -70px;
+    margin-top: 40px
+}
+/* 사진 파일 선택 크기 및 위치고정 */
+.photo {
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+/* 상단 타이틀 및 카테고리 */
+
+/* 상단 로그인 및 마이페이지 */
+
+/* 배너 이미지 */
+/* 등록 버튼 위치 고정 */
+.registe {
+    position: absolute;
+    width: 1530px;
+    margin-top: 400px;
+}
+#review{
+    text-align: left;
+}
+.container .main-session .top .pro_info{
+    padding: 10px;
+}
+.container .main-session .input{
+    padding: 10px;
+}
+.container .main-session input{
+    padding: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: 300px;
+}
+.top .title{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+#review #btn #btn1{
+    padding: 5px 10px;
+}
+/* 하단 정보 */
+
+/*컨텐츠 정보*/
+.container .top_info{
+    margin-bottom: 15px;
+ border: 1px solid #222121;
+
+}
+/*컨텐츠 하단*/
+.container .content_footer{
+    font-size: 20px;
+}
+/*테이블*/
+.cart_table{
+    border: 1px solid #000; border-spacing: 0; border-collapse: collapse;
+    text-align: center;
+    
+}
+.cart_table caption{
+    caption-side: bottom;display: none;
+}
+.txt_origin_price{
+    text-decoration:line-through;
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+#review_write{
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#starRev{
+    position: absolute;
+    left: 18%;
+    top:  96%;
+}
+/* 별모양 만들기 */
+.starR{
+  background: url('http://miuu227.godohosting.com/images/icon/ico_review.png') no-repeat right 0;
+  background-size: auto 100%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.starR.on{background-position:0 0;}

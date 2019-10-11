@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+
+#banner {
+    height: 60px;
+}
+#contents {
+    height: 600px;
+}
+#footer {
+    height: 220px;
+}
+/* 레이아웃 */
+#header-nav {
+    height: 50px;
+    line-height: 50px;
+    background: #e4e4e4;
+}
+#content-top {
+    height: 50px;
+    line-height: 50px;
+    background-color: #f4f4f4;
+}
+#content-session{
+    height:auto;
+}
+#content_footer{
+    height:300px;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 상단 타이틀 및 카테고리 */
+
+/* 배너 이미지 */
+
+/* 하단 정보 */
+
+/*컨텐츠 정보*/
+.container .main-session .title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.container .top_info{
+    margin-bottom: 15px;
+    border: 1px solid #222121;
+
+}
+/*컨텐츠 하단*/
+.container .content_footer{
+    font-size: 20px;
+    
+}
+/*테이블*/
+.cart_table{
+    border-collapse: separate;
+    border-spacing: 1px;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    margin : 20px 10px;
+    
+}
+
+.cart_table th{
+    width: 150px;
+    padding: 10px;
+    background-color: #F2F2F2;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart_table td{
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.container .main-session a .btn_review{
+    background-color: #231F20;
+    border-radius:3px;
+    color: white !important;
+    border-style: none; 
+    padding: 10px 15px;
+    font-size: 14px;
+}
+a:hover{
+    color: #7EBDC2;
+}

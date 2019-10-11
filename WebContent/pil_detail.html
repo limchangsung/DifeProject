@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DIFE.com</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/pil_dt_st.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<!-- 달력 소스 -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    
+<!-- 웹 폰트 -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+ 
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+    </script>
+</head>
+
+<body> 
+	<div id="wrap">
+    <div id="header">
+        <div id="header-top">
+        	<span class="header-top">
+        		<div class="header-right">
+        			<a href="signIn.html">로그인 <i class="fas fa-user"></i></a>
+        			<a href="payment.html">마이페이지 <i class="fas fa-clipboard-list"></i></a>
+        			<a href="basket.html">장바구니 <i class="fas fa-shopping-basket"></i></a>
+        		</div>	
+        	<span class="header-left">
+            	<div class="title"><a href="main.html"><img src="img/DIFE_logo2.png" alt=""></a></div>
+            	<div class="category">
+            		<a href="drone.html">드론</a>
+            		<a href="pilot01.html">파일럿</a>
+            		<a href="#">지역 및 날씨</a>
+            		<a href="#">고객지원</a>
+            		<a href="board.html">커뮤니티</a>
+            	</div>
+            </span>			
+           </span>
+        </div>
+      
+        <div id="header-nav">
+            <div class="container" style="color: #242424;">
+                  <span class="text1">카테고리</span>
+                   <select name="select" id="select" style="width: 150px; height: 30px;">
+                    <option value="0">촬영</option>
+                    <option value="1">교육</option>
+                </select>
+                <span class="text1">지역</span>
+                   <span class="area"> 
+                      <input type="text" style="width: 250px; height: 30px;" class="search">
+                    <button class="btn" style="width: 60px; height: 30px; border-radius: 5px;">검색</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- 
+    <div id="banner">
+        <div class="container">
+        	<div class="banner" style="color: black">banner</div>
+      		</div>
+    </div>
+    -->
+    <!-- //banner -->
+
+    <div id="contents">
+        <div id="content1">
+            <div class="container">content1</div>
+        </div>
+        <div id="content2">
+           <div class="container">
+               <div id="grid2">
+                <div class="block1">
+                    <ul class="top">
+                        <li>
+                            <dl>
+                               <img src="img/visit_cnt.png" alt="">
+                                <dd class="name">홍길동 강사</dd>
+                                <dd>경력 5년</dd>
+                                <dd>지역: 서울/인천</dd>
+                                <dd>한줄 소개: 드론 교육에 대한 모든 것을 알려드립니다!</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                  <div class="block5">
+                       <div id="calendar">
+                        교육 및 촬영일 <input id="datepicker" type="text" name="mem_birth" style="color: black;">
+                                    
+                           <!-- 
+                           <input type="text" id="datepicker">
+                            <script src="pikaday.js"></script>
+                            <script>
+                                var picker = new Pikaday({ field: document.getElementById('datepicker') });
+                            </script>
+                            -->
+                        </div>
+                    <button id="pil_btn" style="background-color: #231F20; border-radius: 5px; font-size: 14px;"><a href="#" style="color: white;">파일럿과 상담하기</a></button>
+                  </div>
+                  </div><hr>
+                   <div id="grid">
+                   <div class="block2">
+                       <ul class="mid1">
+                           <li>
+                               <dl>
+                                   <dd class="info_det"><i class="far fa-file-alt"></i> 기본 정보</dd>
+                                   <dd>경력: 5년</dd>
+                                   <dd>지역: 서울/인천</dd>
+                                   <dd>연락 가능 시간: 오전 9시 - 오후 6시</dd>
+                                   <dd></dd>
+                               </dl>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="block3">
+                       <ul class="mid1">
+                           <li>
+                               <dl>
+                                   <dd class="info_det"><i class="far fa-file-alt"></i> 상세 정보</dd>
+                                   <dd>자격증: 보유</dd>
+                                   <dd>보유드론: mavic pro2</dd>
+                                   <dd></dd>
+                               </dl>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+                   <div class="block4">
+                       <ul>
+                           <li>
+                               <dl>
+                                   <dd>포트폴리오</dd>
+                                   <dd><img src="img/%EB%93%9C%EB%A1%A02.PNG" alt="" class="portfile"></dd>
+                               </dl>
+                           </li>
+                       </ul>
+                   </div>
+            </div>
+        </div>
+        <div id="content3">
+            <div class="container">content3</div>
+        </div>
+    </div>
+    <!-- //contents -->
+
+    <div id="footer">
+        <div id="footer-nav">
+            <div class="container"></div>
+        </div>
+        <div id="footer-info">
+            <div class="container">
+            <ul class="info">
+                <li>
+                    <dl>
+                        <dd class="txt" style="font-size: 14px; color: black">회사소개</dd>
+                        <dd class="txt">(주)비트캠프:DIFE</dd>
+                        <dd class="txt">서울특별시 마포구 백범로 23 구프라자 3층</dd>
+                        <dd class="txt">02-707-1480</dd>
+                        <dd class="txt"><a href="#" style="color: #a4a4a4;">고객센터</a></dd>
+                        <dd class="txt"><a href="#" style="color: #a4a4a4;">이용안내</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+</div>
+<!-- //wrap -->
+
+</body>
+</html>

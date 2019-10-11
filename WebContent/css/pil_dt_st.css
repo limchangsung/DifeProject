@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+
+/* 컨테이너 */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 상단 타이틀 및 카테고리 */
+
+/* 상단 로그인 및 마이페이지 */
+
+/* 헤더 검색바 */
+.container select{
+    font-size: 14px;
+}
+
+.container .text1 .area .search{
+    font-size: 17px;
+    /*padding: 0px 20px;*/
+    
+}
+.container .text1{
+    font-size: 17px;
+    padding: 0px 15px 0px 35px;
+}
+/* 배너 이미지 */
+
+/* 중앙 컨텐츠 */
+#grid{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+#grid2{
+    display: grid;
+    grid-template-columns: 700px 400px;
+}
+.container .block1{
+    color: #a4a4a4;
+    height: 150px;
+}
+.container .block1 .top{
+    text-align: left;
+    font-size: 14px;
+    padding: 5px;
+}
+.container .block1 img{
+    width: 140px;
+    height: 140px;
+    float: left;
+    padding: 0px 20px 0px 0px;
+}
+.container .block1 .name{
+    color: black;
+    font-size: 19px;
+    padding: 15px;
+}
+.container .block5{
+    color: black;
+    width: 390px;
+    height: 150px;
+    text-align: end;
+}
+#calendar{
+    font-size: 14px;
+    padding: 60px 15px 0px 0px;
+}
+#datepicker{
+    width: 150px;
+    height: 25px;
+}
+#pil_btn{
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 15px;
+}
+/*기본정보 및 상세정보 */
+.container .block2{
+    color: #a4a4a4;
+    height: 200px;
+}
+.container .block3{
+    color: #a4a4a4;
+    height: 200px;
+}
+.container .block2 .mid1{
+    padding: 10px 0px 10px 90px;
+    text-align: left;
+}
+.container .block2 .mid1 li dl dd{
+    padding: 5px;
+    font-size: 15px;
+}
+.container .block2 .mid1 .info_det{
+    color: black;
+    font-size: 19px;
+}
+.container .block2 .mid1 .info_det .like{
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+}
+.container .block3 .mid1{
+    padding: 10px;
+    text-align: left;
+}
+.container .block3 .mid1 li dl dd{
+    padding: 5px;
+    font-size: 15px;
+}
+.container .block3 .mid1 .info_det{
+    color: black;
+    font-size: 19px;
+}
+.container .block3 .mid1 .info_det .like{
+    width: 20px;
+    height: 20px;padding-right: 3px;
+}
+.container .block4{
+    color: black;
+    height: 450px;
+}
+.container .block4 .portfile{
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    padding: 10px;
+}

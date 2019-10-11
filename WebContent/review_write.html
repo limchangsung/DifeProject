@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DIFE.com</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/review_write.css">
+    
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $('.starRev span').click(function() {
+            $(this).parent().children('span').removeClass('on');
+            $(this).addClass('on').prevAll('span').addClass('on');
+            return false;
+        });
+    </script>
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="header-top">
+                <span class="header-top">
+                    <div class="header-right">
+                        <a href="signIn.html">로그인 <i class="fas fa-user"></i></a>
+                        <a href="payment.html">마이페이지 <i class="fas fa-clipboard-list"></i></a>
+                        <a href="basket.html">장바구니 <i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                    <span class="header-left">
+                        <div class="title"><a href="main.html"><img src="img/DIFE_logo2.png" alt=""></a></div>
+                        <div class="category">
+                            <a href="drone.html">드론</a>
+                            <a href="pilot01.html">파일럿</a>
+                            <a href="#">지역 및 날씨</a>
+                            <a href="#">고객지원</a>
+                            <a href="#">커뮤니티</a>
+                        </div>
+                    </span>
+                </span>
+            </div>
+            <div id="header-nav">
+                <div class="container"></div>
+            </div>
+        </div>
+        <!-- //header -->
+
+        <div id="banner">
+            <div class="container">
+                <div class="banner" style="color: black"></div>
+            </div>
+        </div>
+        <!-- //banner -->
+
+        <div id="contents">
+            <div class="container">
+                <!-- 세션 영역  -->
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                       <p id="review_write">상품후기 작성</p>
+                        <div class="section1">
+                            <img src="img/D0002.png" width="400" height="400" />
+
+                        </div>
+                        <div class="section2">
+                            <form class="form-horizontal" action="#" method="post" enctype="multipart/form-data">
+                                <div class="control-group">
+                                    <label class="control-label col-sm-8" for="inputTitle">제목</label>
+                                    <div class="col-md-1 col-sm-10">
+                                        <input type="text" id="inputTitle" class="writer"><br>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label col-sm-8" for="inputWriter">작성자</label>
+                                    <div class="col-md-1 col-sm-10">
+                                        <input type="text" id="inputWriter" class="writer">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label col-sm-8" for="inputPassword">비밀번호</label>
+                                    <div class="col-md-1 col-sm-10">
+                                        <input type="password" id="inputPassword" class="writer">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label col-sm-8" for="inputWriter">평점</label>
+                                    <div class="col-md-5 col-sm-5" id="starRev">
+                                        <span class="starR on">별1</span>
+                                        <span class="starR on">별2</span>
+                                        <span class="starR on">별3</span>
+                                        <span class="starR on">별4</span>
+                                        <span class="starR">별5</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label col-sm-8" for="inputPhoto">사진</label>
+                                    <div class="col-md-1 col-sm-10">
+                                        <input type="file" id="inputPhoto" class="photo">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label col-sm-8" for="inputContent">내용</label>
+                                    <div class="col-md-1 col-sm-10">
+                                        <textarea rows="5" cols="46" id="inputContent" class="content"></textarea>
+                                    </div>
+                                </div>
+                                <div class="registe">
+                                    <input type="submit" value="등록" id="btn_submit" style="padding: 5px 20px; margin-right: 40px; background-color: #231F20; color: white; border-radius: 3px !important;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- //session -->
+
+                <!--    content_footer-->
+                <div id='content_footer'>
+                    <div class="container" style="color: black">
+                        <div class="total_product"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //contents -->
+
+        <div id="footer">
+            <div id="footer-nav">
+                <div class="container"></div>
+            </div>
+            <div id="footer-info">
+                <div class="container">
+                    <ul class="info">
+                        <li>
+                            <dl>
+                                <dd class="txt" style="font-size: 14px; color: black">회사소개</dd>
+                                <dd class="txt">(주)비트캠프:DIFE</dd>
+                                <dd class="txt">서울특별시 마포구 백범로 23 구프라자 3층</dd>
+                                <dd class="txt">02-707-1480</dd>
+                                <dd class="txt"><a href="#" style="color: #a4a4a4;">고객센터</a></dd>
+                                <dd class="txt"><a href="#" style="color: #a4a4a4;">이용안내</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+
+</body></html>

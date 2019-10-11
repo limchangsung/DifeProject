@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+#contents {
+    height: 915px;
+}
+/* 레이아웃 */
+
+#content1 {
+    height: 25px;
+    line-height: 25px;
+    background-color: #ffffff;
+}
+#content2 {
+    height: 820px;
+   /* line-height: 480px;*/
+   /* background-color: #f2f2f2;*/
+}
+#content3 {
+    height: 70px;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 상단 타이틀 및 카테고리 */
+
+/* 상단 로그인 및 마이페이지 */
+
+/* 헤더 검색바 */
+.container select{
+    font-size: 14px;
+}
+
+.container .text1 .area .search{
+    font-size: 17px;
+    /*padding: 0px 20px;*/
+    
+}
+.container .text1{
+    font-size: 17px;
+    padding-left: 35px;
+    padding-right: 15px;
+}
+/* 배너 이미지 */
+
+/* 중앙 컨텐츠 */
+.container .list{
+    width: 1100px; height: 200px; border: 1px solid #ffffff; background-color: white; 
+}
+.container .list li dl .pil{
+    float: left;
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container .list li dl .txt{
+    text-align: left;
+    color: #a4a4a4;
+    font-size: 14px;
+    padding-left: 220px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.container .list li dl .txt a:hover{
+    color: #7EBDC2;
+}
+.container .list li dl dd .star{
+    float: left;
+    padding-left: 29px;
+    padding-top: 8px;
+}
+
+.pagination li .page-link { border-radius: 50% !important;margin: 0 5px;}
+
+/* 하단 정보 */

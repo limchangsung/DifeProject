@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* 전체 레이아웃 */
+#wrap {
+	clear: both;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+#header {
+    height: 120px;
+}
+#banner {
+    height: 200px;
+    line-height: 200px;
+    background: #848484;
+}
+#contents {
+    height: auto;
+}
+#footer {
+    height: 220px;
+}
+/* 레이아웃 */
+#header-top {
+    height: 70px;
+   /* line-height: 70px;*/
+    background: #ffffff;
+    margin: 0px 260px;
+}
+#header-nav {
+    height: 50px;
+    line-height: 50px;
+    background: #e4e4e4;
+}
+#content-top {
+    height: 50px;
+    line-height: 50px;
+    
+   
+    background-color: #f4f4f4;
+}
+#content-session{
+    height:auto;
+    
+}
+#content_footer{
+    
+    height:300px;
+    line-height: 300px;
+     background-color: #f4f4f4;
+}
+
+
+#footer-nav {
+    height: 60px;
+    line-height: 60px;
+    background-color: #0097a7;
+}
+#footer-info {
+    height: 140px;
+    line-height:20px;
+    background-color: #ffffff;
+}
+/* 컨테이너 */
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.3);
+}
+#content .co
+/* 상단 타이틀 및 카테고리 */
+.header-top  {
+    line-height: 65px;
+}
+.header-top .header-left {
+}
+.header-top .header-left .title a img{
+    float: left;
+    width: 120px;
+    height: auto;
+    margin-top: 8px;
+    
+}
+.header-top .header-left .category{
+    float: left;
+}
+.header-top .header-left .category a{
+	font-size: 14px;
+	color: #242424;
+	padding: 10px 15px 15px 20px;
+}
+.header-top .header-left .category a:hover{
+	color: #086A87;
+}
+/* 상단 로그인 및 마이페이지 */
+.header-top .header-right{
+    float: right;
+}
+
+.header-top .header-right a{
+	font-size: 14px;
+	color: #242424;
+	padding: 10px 15px 20px 15px;
+}
+
+.header-top .header-right a:hover{
+	color: #086A87;
+}
+
+/* 배너 이미지 */
+.container .banner{
+
+}
+/*
+@media screen and (max-width:700px){
+    #header-top{
+        width: auto;
+        float: none;
+    }
+    #contents{
+        width: auto;
+    }
+}*/
+
+/* 하단 정보 */
+.container .info{
+    height: 140px;
+    text-align: center;
+}
+.container .info li dl .txt{
+    font-size: 12px;
+    color: #a4a4a4;
+}
+/*컨텐츠 정보*/
+.container .top_info{
+    margin-bottom: 15px;
+ border: 1px solid #222121;
+
+}
+/*컨텐츠 하단*/
+.container .content_footer{
+    font-size: 20px;
+    
+}
+/*테이블*/
+.cart_table
+{
+    border: 1px solid #000; border-spacing: 0; border-collapse: collapse;
+    text-align: center;
+    
+}
+.cart_table caption{
+    caption-side: bottom;display: none;
+}
+.txt_origin_price
+{
+    text-decoration:line-through;
+    font-weight: 1000;
+    font-size: 15px;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DIFE.com</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/ord_dt.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+<!-- 웹 폰트 -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+</head>
+
+<body> 
+	<div id="wrap">
+        <div id="header">
+            <div id="header-top">
+                <span class="header-top">
+                    <div class="header-right">
+                        <a href="signIn.html">로그인 <i class="fas fa-user"></i></a>
+        			    <a href="payment.html">마이페이지 <i class="fas fa-clipboard-list"></i></a>
+        			    <a href="basket.html">장바구니 <i class="fas fa-shopping-basket"></i></a>
+                    </div>	
+                <span class="header-left">
+                    <div class="title"><a href="main.html"><img src="img/DIFE_logo2.png" alt=""></a></div>
+                    <div class="category">
+                        <a href="drone.html">드론</a>
+                        <a href="pilot01.html">파일럿</a>
+                        <a href="#">지역 및 날씨</a>
+                        <a href="#">고객지원</a>
+                        <a href="board.html">커뮤니티</a>
+                    </div>
+                </span>			
+               </span>
+            </div>
+          <div id="header-nav">
+                <div class="container"></div>
+            </div>
+        </div>
+        
+    <!-- //header -->
+        <div id="banner">
+            <div class="container">
+                <div class="banner" style="color: black"></div>
+            </div>
+        </div>
+    <!-- //banner -->
+
+    <div id="contents">
+<!--
+        <div id="content-top">
+           
+            <div class="container" style="color: black">
+                <div class='top_info'>
+                     <p style='font-size:15px; color: black; font-weight: 300; text-align: left;'>DIFE > 마이페이지 > 장바구니</p>
+                </div>
+-->
+        <!-- 세션 영역 -->
+        <div id="content-session">
+            <div class="container" style="color: black">
+                <div class='main-session'>
+                   <p class="title">주문 상세 목록</p><br>
+                <!--테이블 영역      -->
+                        <table class='cart_table'>
+                             <colgroup>
+                                 <col width='100px'>
+                                 <col width="100px">
+                                 <col width="50px">
+                                 <col width="200px">
+                                 <col width='70px'>
+                                 <col width='100px'>
+                                 <col width='150px'>
+                                 <col width='150px'>
+                                 <col width='150px'>
+                                 <col width='100px'>
+                             </colgroup>
+                        <thead>
+                            <th scope="col">주문상세번호</th>
+                            <th scope="col">주문번호</th>
+                            <th scope="col"></th>
+                            <th scope="col">보유상품</th>
+                            <th scope="col">주문수량</th>
+                            <th scope="col">주문금액</th>
+                            <th scope="col">대여일</th>
+                            <th scope="col">반납일</th>
+                            <th scope="col">대여현황</th>
+                            <th scope="col">비고</th>
+                        </thead>
+              
+                            <!-- 주문번호 1페이지  -->
+                            <tbody style="border-top: 1px solid #000">
+                            <td>
+                            	<!-- 클릭시 택배 이동경로 탐색위해 a 설정 -->
+                               <span>19091500001</span>
+                            </td>
+                            
+                            <td><a href="payment.html">OD0001-100001</a></td>
+                            <td>
+                            		<div class="product_img">
+                                        <img src="img/D0012.png" width="62" height="68" align="center">
+                                    </div>
+									
+							</td>
+							<td align="left"><a href="droneDetail.html">MiniDrone(minis-3)</a></td>
+                            <td>1</td>
+                            <td>
+                               <span>100,000 원</span>
+                            </td>
+                            <td>
+                                <span>2019-09-16</span>
+                            </td>
+                            <td>
+                                <span>2019-09-20</span><br>
+                            </td>
+                            <td>
+                                <span>대여중</span>
+                            </td>
+                            <td>
+                                <a href="review_write.html"><button class="btn_review">후기작성</button></a>
+                            </td>
+                        </tbody>
+                        
+                         <!-- 주문번호 2페이지  -->
+                            <tbody style="border-top: 1px solid #000">
+                              <td>
+                            	<!-- 클릭시 택배 이동경로 탐색위해 a 설정 -->
+                               <span>19080100013</span>
+                            </td>
+                            <td><a href="payment.html">OD0001-100001</a></td>
+                            <td>
+                            		<div class="product_img">
+                                    <img src="img/D0012.png" width="62" height="68" align="center">
+                                    </div>
+									
+							</td>
+							<td align="left">BlackDrone(KB)</td>
+                            <td>1</td>
+                            <td>
+                               <span>200,000 원</span>
+                            </td>
+                            
+                            <td>
+                                <span>2019-08-01</span>
+                            </td>
+                            <td>
+                                <span>2019-08-05</span><br>
+                            </td>
+                            <td>
+                                <span>대여완료</span>
+                            </td>
+                            <td>
+                                <a href="review_write.html"><button class="btn_review">후기작성</button></a>
+                            </td>
+                        </tbody>
+                        
+                        <!-- 주문번호 3페이지  -->
+                        <tbody style="border-top: 1px solid #000">
+                              <td>
+                            	<!-- 클릭시 택배 이동경로 탐색위해 a 설정 -->
+                               <span>19071002222</span>
+                            </td>
+                            <td><a href="payment.html">OD0001-100001</a></td>
+                            <td>
+                            		<div class="product_img">
+                                    <img src="img/D0011.png" width="62" height="68" align="center">
+                                    </div>
+									
+							</td>
+							<td align="left">BigDrone(bibibig)</td>
+                            <td>2</td>
+                            <td>
+                               <span>600,000 원</span>
+                            </td>
+                            
+                            <td>
+                                <span>2019-07-15</span>
+                            </td>
+                            <td>
+                                <span>2019-07-20</span><br>
+                            </td>
+                            <td>
+                                <span>대여완료</span>
+                            </td>
+                            <td>
+                                <a href="review_write.html"><button class="btn_review">후기작성</button></a>
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+<!--    //table-->
+       
+          <!--    content_footer-->
+       <div id='content_footer'>
+            <div class="container" style="color: black">
+               <div class="total_product">
+               </div>
+           </div>
+       </div>
+    </div>
+    <!-- //contents -->
+
+    <div id="footer">
+        <div id="footer-nav">
+            <div class="container"></div>
+        </div>
+        <div id="footer-info">
+            <div class="container">
+                <ul class="info">
+                    <li>
+                        <dl>
+                            <dd class="txt" style="font-size: 14px; color: black">회사소개</dd>
+                            <dd class="txt">(주)비트캠프:DIFE</dd>
+                            <dd class="txt">서울특별시 마포구 백범로 23 구프라자 3층</dd>
+                            <dd class="txt">02-707-1480</dd>
+                            <dd class="txt"><a href="#" style="color: #a4a4a4;">고객센터</a></dd>
+                            <dd class="txt"><a href="#" style="color: #a4a4a4;">이용안내</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

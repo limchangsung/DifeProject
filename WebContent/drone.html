@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/drone_st.css">
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+<!--하단 페이지번호 -->
+<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- 달력 소스 -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+		<div id="header">
+			<div id="header-top" class="header-top">
+				<div class="header-right">
+					<a href="signIn.html">로그인 <i class="fas fa-user"></i></a>
+        			<a href="payment.html">마이페이지 <i class="fas fa-clipboard-list"></i></a>
+        			<a href="basket.html">장바구니 <i class="fas fa-shopping-basket"></i></a>
+				</div>
+				<div class="header-left">
+					<div class="title"><a href="main.html"><img src="img/DIFE_logo2.png" alt=""></a></div>
+					<div class="category">
+						<a href="drone.html">드론</a>
+						<a href="pilot01.html">파일럿</a>
+						<a href="#">지역 및 날씨</a>
+						<a href="#">고객지원</a>
+						<a href="board.html">커뮤니티</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 상세검색 -->
+			<div id="header-nav">
+				<div class="container" style="color: #242424; width: 1100px;">
+				<!-- 대여일 -->
+					<span id="calendar" class="search1">대여일</span>
+						<input type="text" id="datepicker" style="width: 150px; height: 27px;">
+               				<script src="pikaday.js"></script>
+                   			<script>
+                       			var picker = new Pikaday({ field: document.getElementById('datepicker') });
+                       	</script>
+				<!-- 시리즈명 -->	
+					<span id="ops" class="search1">시리즈명</span>
+						<select id="operS" name="operS" style="width: 150px; height: 30px; border-radius: 3px; font-size: 14px;">
+							<option value="dro_series_mav">매빅</option>
+							<option value="dro_series_pt">팬텀</option>
+							<option value="dro_series_sp">스파크</option>
+							<option value="dro_series_ins">인스파이어</option>
+							<option value="dro_series_bb">비밥</option>	
+						</select>
+				<!-- 가격 -->
+					<span id="opp" class="search1">가격</span>
+						<select id="operP" name="operP" style="width: 150px; height: 30px; border-radius: 3px; font-size: 14px;">
+							<option value="pos_price_low">50만 원 이하</option>
+							<option value="pos_price_med">50만 원 ~ 100만 원</option>
+							<option value="pos_price_high">100만 원 이상</option>	
+					</select>
+                    <button class="btn" style="width: 60px; height: 30px; border-radius: 5px; background-color: #231F20; color: white">검색</button>
+				</div>
+			</div>
+		</div>
+			
+		<!-- 상세검색결과 목록 -->
+		<div id="content2">
+		    <div class="container">
+			<div class="content2" style="color: black; font-size: 18px;">
+				<div id="grid">
+					<!-- 1번째 단락 -->
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0001.png">
+                			<ul>
+			                    <li><strong class="name">매빅2 PRO</strong></li>
+			                    			     
+			                    <li class="item">DJI</li>
+			                    <li><strong class="item"><i class="fas fa-won-sign"></i> 100,000원</strong></li>
+                			</ul></a>                
+	                </div>
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0002.png">
+                			<ul>
+			                    <li><strong>매빅PRO</strong></li>
+			                    
+			                    <li class="item">DJI</li>
+			                    <li><strong class="item"><i class="fas fa-won-sign"></i> 200,000원</strong></li>
+               				</ul></a>                
+	                </div>
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0003.png">	
+                			<ul>
+			                    <li><strong>팬텀4</strong></li>
+			                    
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 100,000원</strong></li>
+               				</ul> </a>               
+	                </div>
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0004.png">	
+                			<ul>
+			                    <li><strong>팬텀4 PRO</strong></li>
+			                   
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 150,000원</strong></li>
+               				</ul> </a>               
+	                </div>
+	          
+	                <!-- 2번째 단락 -->
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0005.png">	
+                			<ul>
+			                    <li><strong>팬텀3 어드밴스</strong></li>
+			                  
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 250,000원</strong></li>
+               				</ul></a>                
+	                </div>                
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0006.png">	
+                			<ul>
+			                    <li><strong>팬텀3 프로페셔널</strong></li>
+			                    
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 300,000원</strong></li>
+               				</ul> </a>               
+	                </div>	                
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0007.png">	
+                			<ul>
+			                    <li><strong>미니스파크</strong></li>
+			                  
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 100,000원</strong></li>
+               				</ul> </a>               
+	                </div>	                
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0008.png">	
+                			<ul>
+			                    <li><strong>매빅2엔터프라이즈 유니버셜</strong></li>
+			              
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 150,000원</strong></li>
+               				</ul> </a>               
+	                </div>
+	                
+	                <!-- 3번째 단락 -->
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0009.png">	
+                			<ul>
+			                    <li><strong>매빅2엔터프라이즈 듀얼</strong></li>
+			                  
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 200,000원</strong></li>
+               				</ul>  </a>              
+	                </div>                
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0010.png">	
+                			<ul>
+			                    <li><strong>매빅AIR</strong></li>
+			                   
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 250,000원</strong></li>
+               				</ul> </a>               
+	                </div>	                
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0011.png">	
+                			<ul>
+			                    <li><strong>인스파이어1V2_1인</strong></li>
+			                   
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 200,000원</strong></li>
+               				</ul></a>                
+	                </div>	                
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0012.png">	
+                			<ul>
+			                    <li><strong>인스파이어1V2_2인</strong></li>
+			                  
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 150,000원</strong></li>
+               				</ul>  </a>              
+	                </div>
+	                
+	                <!-- 4번째 단락 -->
+	                <div class="block">
+	                	<a href="droneDetail.html"><img src="img/D0013.png">	
+                			<ul>
+			                    <li><strong>인스파이어1PRO_1인</strong></li>
+			                    
+						        <li class="item">DJI</li>
+						        <li><strong class="item"><i class="fas fa-won-sign"></i> 100,000원</strong></li>
+               				</ul>
+               				</a>                
+	                </div>       
+	            </div>
+			</div>
+		</div>
+		            <div class="text-center">
+                        <ul class="pagination" style="font-size: 15px;">
+                            <li><a href="#">이전</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">다음</a></li>
+                        </ul>
+                    </div>
+		
+		<div id="footer">
+	        <div id="footer-nav">
+	            <div class="container"></div>
+	        </div>
+	        <div id="footer-info">
+	            <div class="container">
+	            <ul class="info">
+	                <li>
+	                    <dl>
+	                        <dd class="txt" style="font-size: 14px; color: black">회사소개</dd>
+	                        <dd class="txt">(주)비트캠프:DIFE</dd>
+	                        <dd class="txt">서울특별시 마포구 백범로 23 구프라자 3층</dd>
+	                        <dd class="txt">02-707-1480</dd>
+	                        <dd class="txt"><a href="#" style="color: #a4a4a4;">고객센터</a></dd>
+	                        <dd class="txt"><a href="#" style="color: #a4a4a4;">이용안내</a></dd>
+	                    </dl>
+	                </li>
+	            </ul>
+	            </div>
+	        </div>
+	    </div>
+	    </div>
+	</div>
+</body>
+</html>
